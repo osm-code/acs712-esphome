@@ -43,13 +43,13 @@ CONFIG_SCHEMA = cv.Schema({
     # Se definen los schemas para los sensores internos
     cv.Optional(CONF_CURRENT_SENSOR): sensor.sensor_schema(
             unit_of_measurement=UNIT_AMPERE,
-            accuracy_decimals=2,
+            accuracy_decimals=1,
             device_class=DEVICE_CLASS_CURRENT,
             icon=ICON_CURRENT_AC,
     ),
     cv.Optional(CONF_POWER_SENSOR): sensor.sensor_schema(
             unit_of_measurement=UNIT_WATT,
-            accuracy_decimals=2,
+            accuracy_decimals=0,
             device_class=DEVICE_CLASS_POWER,
             icon=ICON_FLASH,
     ),
